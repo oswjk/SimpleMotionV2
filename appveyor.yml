@@ -5,7 +5,6 @@ platform:
   - x64
 
 build_script:
-- cmd: >-
-    if "%platform%" == "x86" call "%VS140COMNTOOLS%\..\..\VC\vcvarsall.bat" x86
-    if "%platform%" == "x64" call "%VS140COMNTOOLS%\..\..\VC\vcvarsall.bat" amd64
-    nmake /f makefile.nmake
+  - if "%platform%" == "x86" call "%VS140COMNTOOLS%\..\..\VC\vcvarsall.bat" x86
+  - if "%platform%" == "x64" call "%VS140COMNTOOLS%\..\..\VC\vcvarsall.bat" amd64
+  - nmake /f makefile.nmake
