@@ -13,3 +13,4 @@ libsimplemotionv2.a: $(OBJECTS)
 .PHONY: clean
 clean:
 	rm -f $(OBJECTS)
+
